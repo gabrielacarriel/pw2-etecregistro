@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ESTILOS GERAIS */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    color: black;
+    padding: 20px;
+    line-height: 1.6;
+}
+.destaque{
+    background-color: rgb(255, 170, 194);
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid rgb(163, 0, 90);
+    font-weight: bold;
+}
+.box{
+    width: 530px;
+    background-color: palevioletred;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid rgb(139, 0, 69);
+    border-radius: 8px;
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* SERÁ EXECUTADO QUANDO O USUÁRIO PASSAR O MOUSSE EM CIMA */
+.box:hover{
+    background-color: rgba(168, 23, 86, 0.989);
+    color: black;
+    transform: scale(0.8);
+}
+.btn-dowload{
+    background-color: rgb(236, 26, 124);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-dowload:hover{
+    background-color: rgb(226, 43, 119);
+}
+ 
+/*formato inupts de formulario */
+input{
+    width: 300px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ff1c1c;
+    border-radius: 5px;
+    background-color: beige;
+    color: blue;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box shadow 0.3s ease ;
+}
+
+input: :focus{
+    outline:none;
+    border color:  blue;
+    box-shadow: 0 0 20px   rgb(226, 43, 119);
+}
+
+/*Selecionando uma input pelo o seu tipo */
+input[type="email"]{
+    background-color: aqua;
+    color: black;
+
+} 
+
+/*citaçoes personalizadas com ::before ::after*/
+.citacao{
+    width: 620px;
+    position: relative;
+    padding: 30px 40px;
+    background-color: blueviolet;
+    border-left:5px solid rgb(226, 43, 119);
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.citacao ::before{
+    content:  ' " ';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 80px;
+    color: #00ffaa;
+    opacity: 0.3;
+}
+
+.citacao ::after{
+     content:  ' " ';
+    position: absolute;
+    bottom: -40px;
+    right: 90px;
+    font-size: 80px;
+    color: #00ffaa;
+    opacity: 0.3;
+}

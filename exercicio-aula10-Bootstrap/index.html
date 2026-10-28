@@ -9,7 +9,7 @@
 <body>
     <!--AQUI ENTRAM AS ETAPAS 1 A 7-->
     <!--ETAPA 1: NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="#">CodeStart</a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
@@ -34,7 +34,7 @@
         <div class="carousel-item active">
          <img src="" alt="" class="">
          <!-- Overlay: escurece a imagem para destacar o texto-->
-          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-none d-md-block"></div>
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary bg-opacity-25 d-none d-md-block"></div>
           <div class="carousel-caption d-none d-md-block">
             <h5>Aprender a programar do zero</h5>
             <p>Cursos práticos para quem está começando na tecnologia.</p>
@@ -44,7 +44,7 @@
        <div class="carousel-item">
          <img src="" alt="" class="">
          <!---Overlay-->
-         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-none d-md-block"></div>
+         <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary bg-opacity-75 d-none d-md-block"></div>
          <div class="carousel-caption d-none d-md-block">
            <h5>Professores com experiência de mercado</h5>
            <p>Aprenda com quem trabalha na área todos os dias.</p>
@@ -54,7 +54,7 @@
        <div class="carousel-item">
          <img src="" alt="" class="">
          <!---Overlay-->
-         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-none d-md-block"></div>
+         <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary bg-opacity-10 d-none d-md-block"></div>
          <div class="carousel-caption d-none d-md-block">
            <h5>Construa projetos reais</h5>
            <p>Monte um portifólio para conquistar sua primeira vaga.</p>
@@ -78,7 +78,7 @@
          
          <!--linha 1-->
         <div class="row mb-4">
-            <div  class="col-md-4">
+            <div  class="col-md-6">
                <div class="card h-100">
                 <img src="" alt="" class="">
                 <div class="card-body">
@@ -89,7 +89,7 @@
                </div>
             </div>
 
-            <div  class="col-md-4">
+            <div  class="col-md-6">
                <div class="card h-100">
                 <img src="" alt="" class="">
                 <div class="card-body">
@@ -101,7 +101,7 @@
             </div>
 
 
-            <div  class="col-md-4">
+            <div  class="col-md-6">
                <div class="card h-100">
                 <img src="" alt="" class="">
                 <div class="card-body">
@@ -115,7 +115,7 @@
 
         <!--linha 2-->
         <div class="row mb-4">
-            <div  class="col-md-4">
+            <div  class="col-md-6">
                <div class="card h-100">
                 <img src="" alt="" class="">
                 <div class="card-body">
@@ -126,7 +126,7 @@
                </div>
             </div>
 
-            <div  class="col-md-4">
+            <div  class="col-md-6">
                <div class="card h-100">
                 <img src="" alt="" class="">
                 <div class="card-body">
@@ -138,7 +138,7 @@
             </div>
 
 
-            <div  class="col-md-4">
+            <div  class="col-md-6">
                <div class="card h-100">
                 <img src="" alt="" class="">
                 <div class="card-body">
@@ -154,8 +154,8 @@
 
       <!--ETAPA 4: ALERTA DISPENSAVEL-->
       <div class="container">
-         <div class="alert alert-succes alert-dismissible fade-show" role="alert">
-           <strong>Matrículas abertas!</strong> Garanta 20% de desconto na sua primeira matrícula
+         <div class="alert alert-warning alert-dismissible fade-show" role="alert">
+           <strong>Últimas Vagas!</strong> Garanta 20% de desconto na sua primeira matrícula
            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
           </div>
       </div>
@@ -163,7 +163,7 @@
 
       <!--ETAPA 5: TABELA-->
      <div class="container my-5" id="turmas">
-       <h2 class="text-center mb-4">próximas Turmas</h2>
+       <h2 class="text-center mb-4">Próximas Turmas</h2>
        <div class="table-responsive">
           <table class="table table-striped table-hover">
            <thead class="table-dark">
@@ -172,6 +172,7 @@
               <th>Cursos</th>
               <th>Dias e horários</th>
               <th>Duração</th>
+              <th>Vagas</th>
              </tr>
            </thead>
            <tbody>
@@ -180,18 +181,36 @@
               <td>HTML e CSS</td>
               <td>Seg e Qua, 19h às 21h</td>
               <td>2 meses</td>
+              <td>
+                <span class="badge bg-success">Aberta</span>
+              </td>
             </tr>
             <tr>
               <td>2</td>
               <td>JavaScript</td>
               <td>Ter e Qui, 19h às 21h</td>
               <td>3 meses</td>
+              <td>
+                <span class="badge bg-success">Aberta</span>
+              </td>
             </tr>
             <tr>
               <td>3</td>
               <td>Python</td>
               <td>Sáb, 9h às 13h</td>
               <td>3 meses</td>
+              <td>
+                <span class="badge bg-success">Aberta</span>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Java</td>
+              <td>Sex, 19h às 22h</td>
+              <td>4 meses</td>
+              <td>
+                <span class="badge bg-success">Aberta</span>
+              </td>
             </tr>
            </tbody>
           </table> 
@@ -254,12 +273,39 @@
               </div>
 
               <div class="modal-footer">
-                 <button type=""></button>
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                 <button type="button" class="btn btn-success" id="btnConfirmar">Confirmar</button>
               </div>
 
             </div>
           </div>
         </div>
+
+        <!--ETAPA 7: RODAPÉ-->
+       <footer class="bg-dark text-white text-center py-4 mt-5">
+           <div class="container">
+            <p class="mb-1">&copy; 2026 CodeStart Cursos. Todos os direitos reservados.</p>
+            <small>Contato: contato@codestart.com.br</small>
+           </div>
+       </footer>
+  
+
+        <!--ETAPA 6C: SCRIPT-->
+        <script>
+          const formulario = document.getElementById("formInscricao");
+          const modalConfirmacao = new
+          bootstrap.Modal(document.getElementById("modalConfirmacao"));
+
+          formulario.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+            modalConfirmacao.show();
+          });
+
+          document.getElementById("btnConfirmar").addEventListener("click", function () {
+            formulario.reset();
+            modalConfirmacao.hide();
+          });
+        </script>
 
 
 </body>
